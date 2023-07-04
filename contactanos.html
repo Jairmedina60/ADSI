@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactar</title>
+    <link rel="stylesheet" href="css/contactanos.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <img src="image/logo.png" alt="Logo">
+            <ul>
+                <li><a href="a.html">inicio</a></li>
+                <li><a class="iniciar" href="iniciar.html">Iniciar sesión</a></li>
+                <li><a class="contactar" href="a.html">Contactar</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>BIENVENIDOS</h1>
+            <p class="parrafo">Nuestra página web está diseñada para proporcionar a los aprendices <br>un medio
+                eficiente y organizado para controlar y gestionar sus proyectos.</p>
+        </header>
+    </div>
+
+    <div class="contend">
+        <div class="bloque">
+            <h2>¿En qué te podemos ayudar?</h2>
+            <p>Estamos aquí para ayudarte y asesorarte en tus preguntas e inquietudes.</p>
+            <a class="contactanos" href="">Contáctanos</a>
+        </div>
+    </div>
+
+    <div class="caja">
+        <img class="em" src="image/imagen.avif" alt="Imagen">
+    </div>
+
+    <div class="caja2"></div>
+
+    <div class="caja3">
+        <h1 class="titulo">FORMULARIO DE CONTACTO</h1>
+    </div>
+
+    <div class="caja4"></div>
+    <div class="caja5"></div>
+
+    <div>
+        <a class="home" href="a.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+            </svg>
+        </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <form id="form"  action="https://formspree.io/f/mzblpygj" method="POST" class="form">
+        <input class="Nombre" type="text" name="name" id="name" placeholder="Nombres" required>
+        <input class="Correo" type="email" name="email" id="email" placeholder="Correo electrónico" required>
+        <input class="Pregunta" type="text" name="message" id="message" placeholder="Tu pregunta e inquietud" required>
+        <button class="bloque2" type="submit"><p class="enviar">Enviar</p></button>
+        <img class="imagen2" src="image/logo.png" alt="Logo">
+    </form>
+    
+    <div id="mensaje-enviado">
+       <center>Su respuesta ha sido enviada exitosamente <br> pronto estaremos en contacto contigo.</center> 
+    </div>
+    
+    <script>
+        document.getElementById("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+    
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            var successMessage = document.getElementById("mensaje-enviado");
+    
+            if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+                alert("Por favor, complete todos los campos.");
+                return;
+            }
+    
+            
+            axios.post("https://formspree.io/f/mzblpygj", {
+                name: name,
+                email: email,
+                message: message
+            })
+            .then(function(response) {
+                
+                successMessage.style.display = "block";
+                document.getElementById("form").reset(); 
+            })
+            .catch(function(error) {
+               
+                alert("Ha ocurrido un error. Por favor, inténtelo nuevamente.");
+            });
+        });
+    </script>

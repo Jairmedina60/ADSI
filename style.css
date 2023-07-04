@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: #C9C5C5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    position: relative;
+}
+.parrafo{
+    font-weight: 600;
+    font-size: 20px;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+nav img{
+    width: 120px;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 6px 20px;
+    font-weight: 500;
+    font-size: 1.7rem;
+    transition: all 0.2s ease 0s;
+
+}
+.iniciar{
+    color: black;
+    text-decoration: none;
+   
+}
+.contactar{
+    color: black;
+    text-decoration: none;
+   
+}
+ul li:hover{
+    border-radius: 20px;
+    background-color: #3AA802;
+    color: #fff;
+    
+    
+}
+header{
+    position: absolute;
+    bottom: 30%;
+    padding: 20px 60px;
+}
+header h1{
+    font-size: 5rem;
+}
+header p{
+    margin-bottom: 20px;
+    margin-top: 70px;
+    font-size: 1.3rem;
+}
+.caja .em{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 120px;
+  left: 800px;    
+}
+
+.contend .bloque{
+    position: absolute;
+    width: 1365px;
+    height: 12px;
+    top: 40px;
+    background-color: #3AA802;
+    
+}
+
+
+    

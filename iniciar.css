@@ -1,0 +1,124 @@
+.caja{
+    background-color:#a8a3a3;
+    width: 407px;
+    height: 646px;
+    position: absolute;
+    z-index: 5;
+    top: 1px;
+    left: 70%;
+    z-index: 1;
+    box-shadow: 13px 16px 37px 7px #000000;
+
+}
+
+
+.imagen {
+    display: flex;
+    width: 600px;
+    position: absolute;
+    left: 150px;
+}
+
+.logo {
+    width: 270px;
+    display: flex;
+    left: 70px;
+    position: absolute;
+    top: 130px;
+}
+
+.email {
+    top: 300px;
+    position: absolute;
+    width: 250px;
+    left: 80px;
+    height: 23px;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: #3AA802;
+}
+
+.correo {
+    position: absolute;
+    top: 283px;
+    left: 90px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    
+}
+
+.password{
+    top: 370px;
+    position: absolute;
+    width: 250px;
+    left: 80px;
+    height: 23px;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: #3AA802;
+}
+
+.contraseña {
+    position: absolute;
+    top: 353px;
+    left: 90px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    
+}
+
+.boton{
+    position: absolute;
+    top: 470px;
+    left: 145px;
+    width: 130px;
+    height: 35px;
+    border-radius: 15px;
+    border-style: groove;
+}
+
+.boton:hover {
+       border-radius: 15px;
+       background-color: #3AA802;
+       color: aliceblue;
+
+}
+.iniciar{
+    position: relative;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.olvidar {
+    position: absolute;
+    top: 410px;
+    left: 130px;
+    font-size: 13px;
+    color: #0085FF;
+    text-decoration: none;
+}
+
+.botton {
+    position: relative;
+    left: 955px;
+    z-index: 2;
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
+    border-style: groove;
+    
+}
+
+.inicio {
+    
+    text-decoration: none;
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 0px;
+   
+}

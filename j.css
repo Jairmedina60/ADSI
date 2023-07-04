@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: #C9C5C5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+}
+
+.parrafo {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+
+nav img {
+    width: 120px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    padding: 6px 20px;
+    font-weight: 500;
+    font-size: 1.7rem;
+    transition: all 0.2s ease 0s;
+}
+
+.iniciar,
+.contactar {
+    color: black;
+    text-decoration: none;
+}
+
+ul li:hover {
+    border-radius: 20px;
+    background-color: #3AA802;
+    color: #fff;
+}
+
+header {
+    position: absolute;
+    bottom: 30%;
+    padding: 20px 60px;
+}
+
+header h1 {
+    font-size: 5rem;
+}
+
+header p {
+    margin-bottom: 20px;
+    margin-top: 70px;
+    font-size: 1.3rem;
+}
+
+
+.bloque {
+    position: relative;
+    z-index: 2;
+    
+}
+
+
+.caja .em {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 120px;
+    left: 800px;
+    z-index: 1;
+}
+
+
+.contend .bloque {
+    position: absolute;
+    width: 100%;
+    max-width: 1365px;
+    height: 200px;
+    top: 40px;
+    background-color: #3AA802;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contend .bloque h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contend .bloque p {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contactanos {
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3s ease;
+    border-style: unset;
+}
+
+.contactanos:hover {
+    background-color: #df2222;
+}
